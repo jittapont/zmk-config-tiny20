@@ -7,17 +7,21 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/outputs.h>
 
-{
+/ {
+    //  0   1   2   3       4   5   6   7
+    //  8   9   10  11      12  13  14  15
+    //          16  17      18  19
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        alpha1 {
             bindings = <
-                &kp N1  &kp N2  &kp N3  &kp N4    &kp A &kp B &kp C &kp D
-                &kp N5  &kp N6  &kp N7  &kp N8    &kp E &kp F &kp G &kp H
-                                &kp N9  &kp N0    &kp I &kp J
+                &kp Q           &as LC(C) L     &as LC(X) G     &as LC(V) D                 &as LC(Z) H     &as LC(S) U     &as LC(Y) O     &kp SEMI
+                &mt LGUI I      &mt LALT R      &mt LSHIFT S    &mt LCTL T                  &mt RCTL N      &mt RSHIFT E    &mt RALT A      &mt RGUI C
+                                                &lt NAV TAB     &lt AL2 SPC                 &lt NUM BSPC    &lt FUN DEL
             >;
         };
-    }
-}
+    };
+};
