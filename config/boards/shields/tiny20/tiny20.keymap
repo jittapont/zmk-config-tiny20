@@ -18,9 +18,9 @@
 
         alpha1 {
             bindings = <
-                &kp Q           &as LC(C) L     &as LC(X) G     &as LC(V) D                 &as LC(Z) H     &as LC(S) U     &as LC(Y) O     &kp SEMI
-                &mt LGUI I      &mt LALT R      &mt LSHIFT S    &mt LCTL T                  &mt RCTL N      &mt RSHIFT E    &mt RALT A      &mt RGUI C
-                                                &lt NAV TAB     &lt AL2 SPC                 &lt NUM BSPC    &lt FUN DEL
+                &kp Q           &kp L     &kp G     &kp D                 &kp H     &kp U     &kp O     &kp SEMI
+                &kp I      &kp R      &kp S    &kp T                  &kp N      &kp E    &kp A      &kp C
+                                                &kp TAB     &kp SPC                 &kp BSPC    &kp DEL
             >;
         };
     };
