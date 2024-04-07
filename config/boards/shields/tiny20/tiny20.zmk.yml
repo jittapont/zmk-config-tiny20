@@ -1,0 +1,11 @@
+file_format: "1"
+id: tiny20
+name: tiny20
+type: shield
+url: https://github.com/jittapont/
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - tiny20_left
+  - tiny20_right
