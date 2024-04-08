@@ -28,24 +28,6 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
-        hm_l: homerow_mods_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_L";
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick-tap-ms = <250>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
-        hm_r: homerow_mods_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_R";
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick-tap-ms = <250>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-        };
     };
 
     keymap {
@@ -55,7 +37,7 @@
             bindings = <
                 &key_repeat    &kp L     &kp G     &kp D                 &kp H     &kp U     &kp O     &kp SEMI
                 &bhm LSHIFT I    &kp S      &kp R    &kp T                  &kp N      &kp E    &kp A      &bhm RSHIFT C
-                                                &hl_l AL2 ESC     &kp SPACE                 &kp BSPC    &kp ENTER
+                                                &bhm AL2 ESC     &kp SPACE                 &kp BSPC    &kp ENTER
             >;
         };
        	
