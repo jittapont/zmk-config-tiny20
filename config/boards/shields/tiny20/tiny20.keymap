@@ -28,6 +28,15 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
+        hl_l: homerow_layers_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_LAYERS_L";
+            #binding-cells = <2>;
+            tapping-term-ms = <220>;
+            quick-tap-ms = <250>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
+        };
     };
 
     keymap {
@@ -37,7 +46,7 @@
             bindings = <
                 &key_repeat    &kp L     &kp G     &kp D                 &kp H     &kp U     &kp O     &kp SEMI
                 &bhm LSHIFT I    &kp S      &kp R    &kp T                  &kp N      &kp E    &kp A      &bhm RSHIFT C
-                                                &bhm AL2 ESC     &kp SPACE                 &kp BSPC    &kp ENTER
+                                                &hl_l AL2 ESC     &kp SPACE                 &kp BSPC    &kp ENTER
             >;
         };
        	
