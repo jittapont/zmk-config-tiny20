@@ -20,6 +20,15 @@
     //  8   9   10  11      12  13  14  15
     //          16  17      18  19
 
+combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <30>;
+            key-positions = <16 17>;
+            bindings = <&kp ESC>;
+        };
+    };
+
     behaviors {
         bhm: balanced_homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -48,7 +57,7 @@
             bindings = <
                 &key_repeat	&kp L	&kp G	&kp D                 	&kp H	&kp U     &kp O     &kp SEMI
                 &bhm LSHIFT I	&kp S	&kp R	&kp T                  	&kp N	&kp E    &kp A      &bhm RSHIFT C
-                                &lt AL2 ESC	&lt NUM SPACE		&kp BSPC	&lt SYM ENTER
+                                &mo AL2	&lt NUM SPACE		&kp BSPC	&lt SYM ENTER
             >;
         };
        	
