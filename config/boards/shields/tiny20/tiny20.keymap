@@ -65,6 +65,6 @@
                 &kp N9       &kp N0              &kp SQT     &kp DQT               &kp MINUS    &kp EQUAL    &kp LPAR     &kp RPAR
                                 &kp TILDE         &trans          		&kp UNDERSCORE      &kp PIPE
 		    >;
-	}
+	};
     };
 };
