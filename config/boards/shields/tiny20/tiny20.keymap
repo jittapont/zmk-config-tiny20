@@ -12,8 +12,8 @@
 /* Layers */
 #define AL1 0
 #define AL2 1
-#define NUM 3
-# define SYM 4
+#define NUM 2
+# define SYM 3
 
 / {
     //  0   1   2   3       4   5   6   7
