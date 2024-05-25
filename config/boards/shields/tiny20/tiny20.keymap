@@ -46,16 +46,16 @@
 
         alpha1 {
             bindings = <
-                &key_repeat    &kp L     &kp G     &kp D                 &kp H     &kp U     &kp O     &kp SEMI
-                &bhm LSHIFT I    &kp S      &kp R    &kp T                  &kp N      &kp E    &kp A      &bhm RSHIFT C
-                                                &hl_l AL2 ESC     &hl_l NUM SPACE                 &kp BSPC    &hl_l SYM ENTER
+                &key_repeat	&kp L	&kp G	&kp D                 	&kp H	&kp U     &kp O     &kp SEMI
+                &bhm LSHIFT I	&kp S	&kp R	&kp T                  	&kp N	&kp E    &kp A      &bhm RSHIFT C
+                                &hl_l AL2 ESC	&hl_l NUM SPACE		&kp BSPC	&hl_l SYM ENTER
             >;
         };
        	
         alpha2 {
 		    bindings = <
-		 	    &caps_word &kp V       &kp W               &kp M            &kp F        &kp SQT         &kp Z &kp COMMA
-                &bhm LSHIFT Q       &kp J          &kp P               &kp K               &kp B       &kp DOT         &kp X       &bhm RSHIFT Y
+		&caps_word	&kp V	&kp W	&kp M            	&kp F	&kp SQT		&kp Z		&kp COMMA
+                &bhm LSHIFT Q	&kp J	&kp P	&kp K			&kp B	&kp DOT		&kp X       &bhm RSHIFT Y
                                 &trans             &trans      &trans      &trans
 		    >;
 	};
@@ -72,7 +72,7 @@
 		    bindings = <
 		&kp EXCL     &kp AT       &kp HASH    &kp DLLR    		&kp PRCNT      &kp CARET    &kp AMPS     &kp ASTRK
                 &kp LBKT     &kp RBKT     &kp LBRC     &kp RBRC        		&kp MINUS    &kp EQUAL    &kp LPAR     &kp RPAR
-                                &kp TILDE         &trans          		&kp UNDERSCORE      &trans
+                                &kp GRAVE         &kp BACKSLASH          	&trans      &trans
 		    >;
 	};
     };
